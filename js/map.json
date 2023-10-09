@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Social Media Users (2021-06)",
+  "title": "Facebook users around the world (2021-06)",
   "width": 800,
   "height": 500,
   "data": {

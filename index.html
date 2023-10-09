@@ -4,12 +4,46 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  <link rel="stylesheet" href="./css/index.css">
+
 </head>
 <body>
-  <div id="vis"/>
+
+  <h1>Facebook Users Worldwide</h1>
+  <img src="data/computerImage.png" alt="Meeting" srcset="">
+  <p class="image-text">Facebook, as a social media behemoth, has profoundly impacted modern society. It revolutionized global communication, connecting billions of individuals, transcending borders, and enabling unprecedented information sharing. However, its influence is a double-edged sword. While fostering community and information exchange, it has faced scrutiny for privacy breaches, misinformation dissemination, and potential societal division. The platform has become a significant political and cultural player, affecting elections and shaping public discourse. Additionally, its business model, reliant on targeted advertising, raises concerns about data security and manipulation. Overall, Facebook has left an indelible mark on how we interact, communicate, and engage with the world, prompting critical conversations about digital ethics and responsibility.</p>
+
+
+
+  <h2>Where are our Facebook Users?</h2>
+  <div class = "map-text">
+    
+    <div id="map"></div>
+    <div>
+      <p>
+        The Visual on the left is a choropleth map representing the number of Facebook Users for every 10 000 individuals.The number of people using Facebook in different countries can be explained by a few simple reasons. Some countries have more people using Facebook because they have better access to the internet and technology. In these places, more folks have smartphones and can easily use Facebook. Additionally, in some places, people are just more used to using social media for connecting with others. Sometimes, government rules about the internet can also affect how many people use Facebook. Finally, how Facebook is advertised and available in different languages can also make a difference. So, a combination of these things determines how many people use Facebook in each country.
+      </p>
+    </div>
+
+  </div>
+  
+
+  <h2>Which countries have the top amount of Facebook Users?</h2>
+  <div class = "barchart-text">
+    <div id="barchart1"></div>
+    <div>
+      <p>
+        The visual on the left is a bar chart showcasing the top 10 countries based on number of users.
+      </p>
+    </div>
+  </div>
+  
+
   <script>
     const spec = "js/map.json"
-    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#map", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    const spec2 = "js/interactiveBarchart.json"
+    vegaEmbed("#barchart1", spec2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
 </body>
 </html>
