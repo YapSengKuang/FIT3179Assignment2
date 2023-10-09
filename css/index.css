@@ -1,45 +1,44 @@
- /* Apply basic styles to the body */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 5em;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
 }
 
-.image-text{
-
-}
-
-/* Style the headings */
 h1, h2 {
-    color: black;
+    color: #333;
 }
 
-/* Add some margin below the headings */
-h1, h2 {
-    margin-bottom: 10px;
+/* Image Styles */
+img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Add some space between paragraphs */
-p {
+/* Text Container Styles */
+.image-text-container, .map-text-container, .barchart-container {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-/* Style the map and barchart sections */
-.map-text, .barchart-text {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+.image-text-container p, .map-text-container p{
+    width: 48%;
+    box-sizing: border-box;
 }
 
-/* Set a maximum width for the map and barchart */
-.map-text div, .barchart-text div {
-    max-width: 45%;
+/* Map Styles */
+#map {
+    height: 400px;
+    
 }
 
-/* Style the images */
-img {
-    max-width: 20em;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* Bar Chart Styles */
+#barchart1 {
+    height: 300px;
+    
 }
+

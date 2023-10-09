@@ -1,6 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A bar chart with highlighting on hover and selecting on click. (Inspired by Tableau's interaction style.)",
+    "width": 230,
+  
     "data": {
       "url": "data/Top10fbusersbycountry.csv"
   },
@@ -18,8 +20,8 @@
       "cursor": "pointer"
     },
     "encoding": {
-      "x": {"field": "Users", "type": "quantitative"},
-      "y": {"field": "Country", "type": "nominal"},
+      "x": {"field": "userPer10k", "type": "quantitative"},
+      "y": {"field": "Country", "type": "nominal", "sort": "-x"},
       "fillOpacity": {
         "condition": {"param": "select", "value": 1},
         "value": 0.3
