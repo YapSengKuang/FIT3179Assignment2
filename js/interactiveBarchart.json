@@ -6,7 +6,8 @@
     "url": "data/Top10fbusersbycountry.csv"
   },
   "mark": {
-    "type": "bar"
+    "type": "bar",
+    "color": "#3b5998"
   },
   "encoding": {
     "x": {"field": "userPer10k", "type": "quantitative", "title": "Number of users"},

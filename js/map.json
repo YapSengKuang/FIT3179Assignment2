@@ -37,7 +37,7 @@
         "color": {
           "field": "userPer10k",
           "type": "quantitative",
-          "scale": {"type": "linear", "scheme": "blues", "domain": [0, 16000]},
+          "scale": {"type": "linear", "scheme": "blues","domain": [0, 16000]},
           "title": "Number of Users per 10 000"
         },
         "tooltip": [
