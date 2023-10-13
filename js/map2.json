@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Internet Users (2000-2020)",
+    "title": "Internet Users from (2000 - 2020)",
     "width": 600,
     "height": 500,
     "params":[
