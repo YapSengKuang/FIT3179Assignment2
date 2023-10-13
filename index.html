@@ -10,19 +10,26 @@
 <body>
 
   <h1>Facebook Users Worldwide</h1>
-  <img src="data/computerImage.png" alt="Meeting" srcset="">
-  <div class="image-text-container">
-    <p class="image-text-left">Facebook, as a social media behemoth, has profoundly impacted modern society. It revolutionized global communication, connecting billions of individuals, transcending borders, and enabling unprecedented information sharing. However, its influence is a double-edged sword. While fostering community and information exchange, it has faced scrutiny for privacy breaches, misinformation dissemination, and potential societal division. 
-    </p>
-    <p class="image-text-right">
-      The platform has become a significant political and cultural player, affecting elections and shaping public discourse. Additionally, its business model, reliant on targeted advertising, raises concerns about data security and manipulation. Overall, Facebook has left an indelible mark on how we interact, communicate, and engage with the world, prompting critical conversations about digital ethics and responsibility.
-    </p>
+  <p class="intro">
+    Visual by Seng Kuang Yap
+  </p>
+
+  <div class="container">
+    <img src="data/computerImage.png" alt="Meeting" srcset="">
+    <div class="image-text-container">
+      <p class="image-text-left">Facebook, as a social media behemoth, has profoundly impacted modern society. It revolutionized global communication, connecting billions of individuals, transcending borders, and enabling unprecedented information sharing. However, its influence is a double-edged sword. While fostering community and information exchange, it has faced scrutiny for privacy breaches, misinformation dissemination, and potential societal division. 
+      </p>
+      <p class="image-text-right">
+        The platform has become a significant political and cultural player, affecting elections and shaping public discourse. Additionally, its business model, reliant on targeted advertising, raises concerns about data security and manipulation. Overall, Facebook has left an indelible mark on how we interact, communicate, and engage with the world, prompting critical conversations about digital ethics and responsibility.
+      </p>
+    </div>
   </div>
+  
   
 
   <h2>Where are our Facebook Users?</h2>
   
-    
+  <div class="container">
     <div id="map"></div>
     <div class="map-text-container">
       <p class="map-text-left">
@@ -30,40 +37,45 @@
       <p class="map-text-right">
         Additionally, in some places, people are just more used to using social media for connecting with others. Sometimes, government rules about the internet can also affect how many people use Facebook. Finally, how Facebook is advertised and available in different languages can also make a difference. So, a combination of these things determines how many people use Facebook in each country.</p>
     </div>
-
-  
-  
-
+  </div>
+    
   <h2>Which countries have the top amount of Facebook Users?</h2>
-  <div class = "barchart-container">
-    <div id="barchart1"></div>
-    <div>
-      <p>
-        The visual on the left showcases the top 11 countries that have the highest user to population ratios for Facebook. It is notable that countries such as the United States of America and Australia are not part of the top 11, perhaps due to the decrease in popularity in use of Facebook. 
-
-      </p>
+  <div class="container">
+    <div class = "barchart-container">
+      <div id="barchart1"></div>
+      <div>
+        <p>
+          The visual on the left showcases the top 11 countries that have the highest user to population ratios for Facebook. It is notable that countries such as the United States of America and Australia are not part of the top 11, perhaps due to the decrease in popularity in use of Facebook. 
+  
+        </p>
+      </div>
     </div>
   </div>
 
+  
+
   <h2>Internet Access Accross the years</h2>
-  <div class="interactive-container">
-    <div id="interactive"></div>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptate, laudantium vero laborum quidem, maiores architecto quae quia ducimus labore officiis corporis! Aut sit porro totam quae placeat est fugiat!
-      </p>
-    </div>
+  <div class="container">
+    <div class="interactive-container">
+      <div id="interactive"></div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptate, laudantium vero laborum quidem, maiores architecto quae quia ducimus labore officiis corporis! Aut sit porro totam quae placeat est fugiat!
+        </p>
+      </div>
+  </div>
+  
   </div>
 
   
 
   <script>
     const spec = "js/map.json"
-    vegaEmbed("#map", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#map", spec, {mode: "vega-lite", "actions": false}).then(console.log).catch(console.warn);
     const spec2 = "js/interactiveBarchart.json"
-    vegaEmbed("#barchart1", spec2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#barchart1", spec2, {mode: "vega-lite", "actions": false}).then(console.log).catch(console.warn);
     const spec3 = "js/map2.json"
-    vegaEmbed("#interactive", spec3, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#interactive", spec3, {mode: "vega-lite", "actions": false}).then(console.log).catch(console.warn);
   </script>
 </body>
 </html>
