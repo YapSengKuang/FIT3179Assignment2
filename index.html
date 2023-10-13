@@ -9,23 +9,18 @@
 </head>
 <body>
 
-  <h1>Facebook Users Worldwide</h1>
-  <p class="intro">
-    Visual by Seng Kuang Yap
-  </p>
-
-  <div class="container">
-    <img src="data/computerImage.png" alt="Meeting" srcset="">
-    <div class="image-text-container">
-      <p class="image-text-left">Facebook, as a social media behemoth, has profoundly impacted modern society. It revolutionized global communication, connecting billions of individuals, transcending borders, and enabling unprecedented information sharing. However, its influence is a double-edged sword. While fostering community and information exchange, it has faced scrutiny for privacy breaches, misinformation dissemination, and potential societal division. 
-      </p>
-      <p class="image-text-right">
-        The platform has become a significant political and cultural player, affecting elections and shaping public discourse. Additionally, its business model, reliant on targeted advertising, raises concerns about data security and manipulation. Overall, Facebook has left an indelible mark on how we interact, communicate, and engage with the world, prompting critical conversations about digital ethics and responsibility.
+  <div class="title-container">
+    <div class="title-container-left">
+      <h1>Facebook Users Worldwide</h1>
+      <p class="intro">
+        Visual by Seng Kuang Yap
       </p>
     </div>
+
+    <div class="title-container-right">
+      <img src="data/computerImage.png" alt="Meeting" srcset="">
+    </div>
   </div>
-  
-  
 
   <h2>Where are our Facebook Users?</h2>
   
@@ -33,38 +28,55 @@
     <div id="map"></div>
     <div class="map-text-container">
       <p class="map-text-left">
-        The Visual on the left is a choropleth map representing the number of Facebook Users for every 10 000 individuals.The number of people using Facebook in different countries can be explained by a few simple reasons. Some countries have more people using Facebook because they have better access to the internet and technology. In these places, more folks have smartphones and can easily use Facebook.</p>
+        The visual above is a choropleth map representing the <span class="blue">number of Facebook Users for every 10 000 individuals.</span> 
+        The scale goes beyond 10 000 due to the dataset accounting for multiple accounts created by the same user. 
+        The number of people using Facebook in different countries can be explained by a few simple reasons. 
+        Some countries have more people using Facebook because they have better access to the internet and technology.
+        In these places, more folks have smartphones 
+        </p>
       <p class="map-text-right">
-        Additionally, in some places, people are just more used to using social media for connecting with others. Sometimes, government rules about the internet can also affect how many people use Facebook. Finally, how Facebook is advertised and available in different languages can also make a difference. So, a combination of these things determines how many people use Facebook in each country.</p>
+        and can easily use Facebook.
+        Additionally, in some places, people are just more used to using social media for connecting with others.
+         Sometimes, <span class="blue">government rules</span> about the internet can also affect how many people use Facebook. Finally, how Facebook
+          is advertised and available in different languages can also make a difference. So, a combination of these things 
+          determines how many people use Facebook in each country.</p>
     </div>
   </div>
     
   <h2>Which countries have the top amount of Facebook Users?</h2>
   <div class="container">
-    <div class = "barchart-container">
-      <div id="barchart1"></div>
-      <div>
-        <p>
-          The visual on the left showcases the top 11 countries that have the highest user to population ratios for Facebook. It is notable that countries such as the United States of America and Australia are not part of the top 11, perhaps due to the decrease in popularity in use of Facebook. 
-  
+   
+      
+      <div class="map-text-container">
+        <div id="barchart1"></div>
+        <p class="map-text-right">
+          The visual on the left shows the countries that have the top amount of Facebook users, per 10 000 individuals. 
+          What is quite interesting is that Australia, and the United States of America is <span class="blue">not part of the top 10 </span>, despite being a developed country. This could be due to the perception
+          of Facebook in these countries, being intrusive and being for the older generation.
         </p>
       </div>
-    </div>
+      
+      
+    
   </div>
 
   
 
   <h2>Internet Access Accross the years</h2>
   <div class="container">
-    <div class="interactive-container">
-      <div id="interactive"></div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptate, laudantium vero laborum quidem, maiores architecto quae quia ducimus labore officiis corporis! Aut sit porro totam quae placeat est fugiat!
+    <div id="interactive"></div>
+
+    <div class="interactive-text-container">
+        <p class="interactive-text-left">
+          The visual above is an interactive choropleth map showing the <span class="blue">percentage of internet users</span> in each country. As expected, the typical developing countries, such as
+          Australia, the majority of Europe and the United States of America, have a relatively high percentage of internet users compared to the rest of the world, for all years.
+
         </p>
-      </div>
-  </div>
-  
+        <p class="interactive-text-right">
+          The visual, when in the year 2018 has some resemblance to the map showing the number of Facebook users per capita Worldwide. This could be a correlation between having
+          access to internet and the number of Facebook users.
+        </p>
+    </div>
   </div>
 
   
