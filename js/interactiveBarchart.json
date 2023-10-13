@@ -1,50 +1,19 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A bar chart with highlighting on hover and selecting on click. (Inspired by Tableau's interaction style.)",
-    "width": 230,
-  
-    "data": {
-      "url": "data/Top10fbusersbycountry.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart with highlighting on hover and selecting on click. (Inspired by Tableau's interaction style.)",
+  "width": 230,
+  "data": {
+    "url": "data/Top10fbusersbycountry.csv"
   },
-    "params": [
-      {
-        "name": "highlight",
-        "select": {"type": "point", "on": "mouseover"}
-      },
-      {"name": "select", "select": "point"}
-    ],
-    "mark": {
-      "type": "bar",
-      "fill": "#4C78A8",
-      "stroke": "black",
-      "cursor": "pointer"
-    },
-    "encoding": {
-      "x": {"field": "userPer10k", "type": "quantitative"},
-      "y": {"field": "Country", "type": "nominal", "sort": "-x"},
-      "fillOpacity": {
-        "condition": {"param": "select", "value": 1},
-        "value": 0.3
-      },
-      "strokeWidth": {
-        "condition": [
-          {
-            "param": "select",
-            "empty": false,
-            "value": 2
-          },
-          {
-            "param": "highlight",
-            "empty": false,
-            "value": 1
-          }
-        ],
-        "value": 0
-      }
-    },
-    "config": {
-      "scale": {
-        "bandPaddingInner": 0.2
-      }
-    }
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {"field": "userPer10k", "type": "quantitative", "title": "Number of users"},
+    "y": {"field": "Country", "type": "nominal", "sort": "-x"},
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "userPer10k", "type": "quantitative", "title": "Number of Users"}
+    ]
   }
+}
